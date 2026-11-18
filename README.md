@@ -1,35 +1,31 @@
 # Jiewei Zhou — personal academic website
 
-A responsive static website for https://jieweiz.github.io/. No package installation or build is required.
+Published at https://jieweiz.github.io/ using GitHub Pages. Static HTML, CSS and SVG; no build step, analytics or cookies.
 
-## Publish with GitHub Pages
+## Pages and editing
 
-1. Put the contents of this directory in the root of `jieweiz/jieweiz.github.io`, on `main`.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Choose **main** and **/ (root)**, then **Save**.
-5. Check the Pages deployment and open https://jieweiz.github.io/ once it succeeds.
+- `index.html`: About and leadership, the three research lines, publications, PhD supervision, teaching and contact.
+- `projects.html`: dedicated Projects page with responsibilities, active projects and further project experience.
+- `styles.css`: responsive visual design.
+- `script.js`: accessible mobile menu and section highlighting; core content works without JavaScript.
+- `assets/concept-*.svg`: original conceptual research diagrams. They are illustrative schematics, not simulation results or dimensioned engineering drawings.
 
-The `.nojekyll` file tells Pages to serve the static files directly. Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+The downloadable CV and all CV links were removed at the owner's request. No CV file is included in the current site or source archive.
 
-## Edit
+## Sources and credits
 
-- `index.html`: biography, research, project roles, publications, teaching and contact details.
-- `styles.css`: layout, colours and responsive styles.
-- `script.js`: optional navigation highlighting. All content and core interactions work without it.
-- `assets/Jiewei-Zhou-CV.pdf`: downloadable CV. Replace this file to update the CV.
-- `assets/`: portrait and scientific figures.
+Professional content is grounded in the owner's supplied academic record and research presentations. Leadership distinguishes personal PI/co-PI roles from contributions to projects led by other investigators. Proposed developments are described as ongoing research, not completed capabilities.
 
-Preview locally with `python3 -m http.server 8000` from this directory, then open http://localhost:8000/.
+The portrait is the owner's UC3M profile photograph. The HERMeS Hall-thruster photograph is credited to NASA/GRC and is used as an illustration of electric propulsion, not a claim about the owner's experimental work. Original source: https://images.nasa.gov/details/GRC-2015-C-01182
 
-## Sources and editorial decisions
+The supplied departmental site was used to find the Hall-thruster image, direct PhD profile links, project links and additional publication DOI links. At the owner's request, the site does not link to the departmental webpage.
 
-Content is based on the supplied November 2026 English CV and the supplied July 2026 academic-history and research-project presentations. The CV takes precedence for current role, project dates, publication status and supervision. The older research-project PPTX supplies background on ALBATOR; proposed developments are described as research directions, not completed capabilities. MALU is omitted because its funding status is unresolved in these sources. Historical citation counts, student grades, thesis completion estimates and project budgets are omitted.
+The ion beam shepherd schematic includes opposing propulsion to compensate for the beam reaction, consistent with the ESA Ion Beam Shepherd report: https://www.esa.int/gsp/ACT/doc/ARI/ARI%20Study%20Report/ACT-RPT-MAD-ARI-10-6411c-1107-FR-Ariadna-Ion_Beam_Shepherd_Madrid_4000101447.pdf
 
-Portrait: UC3M Department of Aerospace Engineering profile, https://aero.uc3m.es/people/jiewei-zhou/. ORCID and research portal links come from the same profile. The site's current Associate Professor title comes from the newer supplied CV.
+No third-party image reuse licence is granted by this repository.
 
-Scientific panels are cropped from the supplied `Historial_ZHOU_Presentación.pdf` (slides 13, 20 and 24), with original axes and legends preserved. References appear alongside each figure. Images retain their original attribution; no third-party reuse licence is granted by this repository.
+## Publishing
 
-The first two 2026 article DOI links and the 2025 Journal of Electric Propulsion DOI were checked against Crossref by matching titles. Other citations are transcribed from the CV without guessed DOI links.
+Push changes to `main`. GitHub Pages deploys from `main` at `/ (root)`. `.nojekyll` enables direct static hosting.
 
-The full original CV is included as the requested academic source and download. The presentation files themselves are not included. There are no analytics, cookies, remote fonts or visitor-data collection.
+For a local preview, run `python3 -m http.server 8000` in this directory and open http://localhost:8000/.
