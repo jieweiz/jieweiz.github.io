@@ -42,3 +42,5 @@ Course illustrations are original SVG artwork. The Orbital Dynamics orbital path
 HYPHEN overview: https://ep2.uc3m.es/assets/docs/pubs/conference_proceedings/domi22a.pdf (Section II). Collaborations were specified by the owner; profile links and affiliations were checked on 19 November 2026. Filippo Cichocki’s current ENEA affiliation is also confirmed at https://agenda.enea.it/event/1078/contributions/3832/. EP2PLUS-IBM development leadership and its use of an immersed boundary method follow the owner’s explicit wording.
 
 The External collaborations section retains the owner-requested order: Francesco Taccogna, Filippo Cichocki, Ahilan Appar, Adrián Domínguez-Vázquez. Ahilan Appar’s additional Visiting Professor affiliation at the University of Kentucky was supplied by the owner.
+
+Projects are split into four current entries (AQUAHET, ASCENT, ALBATOR and HEEP) and a native expandable Earlier projects list with 12 entries. Classification follows the listed year ranges as of 19 November 2026; HEEP remains current because its listed end year is 2026. All project descriptions, role labels, funding entities and fragment IDs are retained.

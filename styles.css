@@ -333,3 +333,12 @@ summary { color: var(--accent); cursor: pointer; font-size: .9rem; font-weight: 
   .collaboration-grid { grid-template-columns: 1fr; }
   .collaborator-card { padding: 24px; }
 }
+
+/* Keep current projects visible and earlier experience expandable. */
+.earlier-projects { margin-top: 30px; border-block: 1px solid var(--line); }
+.earlier-projects > summary { padding-block: 20px; }
+.earlier-projects > summary span { float: right; font-size: .875rem; font-weight: 400; color: var(--muted); }
+.earlier-projects .project-table-wrap { padding-top: 20px; }
+@media(max-width:650px) {
+  .earlier-projects > summary span { float: none; display: inline-block; margin-left: 10px; }
+}
