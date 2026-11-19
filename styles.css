@@ -259,3 +259,62 @@ summary { color: var(--accent); cursor: pointer; font-size: .9rem; font-weight: 
   .concept > a { min-width: 0; }
   .concept img { height: auto; }
 }
+/* Single-page navigation and the complete project portfolio. */
+.nav-wrap { justify-content: center; }
+.projects-section { background: #fff; border-bottom: 1px solid var(--line); }
+.project-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.project-table caption { text-align: left; color: var(--muted); font-size: .875rem; padding-bottom: 20px; }
+.project-table thead th { text-align: left; color: var(--muted); font-size: .875rem; font-weight: 550; padding: 15px 18px 15px 0; border-block: 1px solid var(--line); }
+.project-table thead th:nth-child(1) { width: 13%; }
+.project-table thead th:nth-child(2) { width: 45%; }
+.project-table thead th:nth-child(3) { width: 29%; }
+.project-table thead th:nth-child(4) { width: 13%; text-align: right; padding-right: 0; }
+.project-table tbody tr { border-bottom: 1px solid var(--line); scroll-margin-top: 110px; }
+.project-table tbody td, .project-table tbody th { vertical-align: top; padding: 25px 24px 25px 0; text-align: left; }
+.project-table .project-dates { font-size: .875rem; white-space: nowrap; color: var(--muted); }
+.project-table .project-name { font-weight: 400; }
+.project-name h3 { font-size: 1.2rem; line-height: 1.4; letter-spacing: -.02em; }
+.project-name p { font-size: .9rem; color: var(--body); line-height: 1.65; margin-top: 7px; }
+.project-role-label { display: inline-block; color: var(--accent); background: #e9f4f4; padding: 2px 9px; border-radius: 4px; margin-top: 11px; font-size: .8rem; font-weight: 500; }
+.project-table .project-funder { font-size: .9rem; line-height: 1.65; }
+.project-table .project-funding { padding-right: 0; font-size: 1rem; color: var(--ink); white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+.funding-note { margin-top: 22px; font-size: .8rem; color: var(--muted); }
+#propellants .concept { align-self: center; }
+@media(max-width:980px) {
+  .nav-wrap { justify-content: flex-end; }
+  .nav-wrap nav { justify-content: center; }
+  .project-table thead th:nth-child(1) { width: 14%; }
+  .project-table thead th:nth-child(2) { width: 39%; }
+  .project-table thead th:nth-child(3) { width: 31%; }
+  .project-table thead th:nth-child(4) { width: 16%; }
+  .project-table tbody td, .project-table tbody th { padding-right: 18px; }
+}
+@media(max-width:700px) {
+  .project-table, .project-table tbody, .project-table tbody tr, .project-table tbody td, .project-table tbody th { display: block; width: 100%; }
+  .project-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .project-table tbody tr { padding-block: 27px; }
+  .project-table tbody tr:first-child { border-top: 1px solid var(--line); }
+  .project-table tbody td, .project-table tbody th { padding: 0; }
+  .project-table .project-dates { margin-bottom: 12px; }
+  .project-table .project-name { margin-bottom: 20px; }
+  .project-table .project-funder { margin-bottom: 12px; }
+  .project-table .project-funding { text-align: left; }
+  .project-table .project-funder::before, .project-table .project-funding::before { content: attr(data-label); display: block; font-size: .8rem; color: var(--muted); font-weight: 400; margin-bottom: 3px; }
+}
+/* Funders only: three-column project table. */
+.project-table thead th:nth-child(1) { width: 14%; }
+.project-table thead th:nth-child(2) { width: 53%; }
+.project-table thead th:nth-child(3) { width: 33%; padding-right: 0; }
+.project-table .project-funder { padding-right: 0; }
+.publication-category { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding-bottom: 22px; }
+.publication-category h3 { font-size: 1.6rem; }
+.publication-category > span { color: var(--muted); font-size: .875rem; white-space: nowrap; }
+.conference-section { margin-top: 55px; }
+.paper h4 { font-size: 1.2rem; line-height: 1.45; letter-spacing: -.02em; font-weight: 550; }
+.paper h4 a { text-decoration: none; color: var(--ink); }
+.paper h4 a:hover { color: var(--accent); text-decoration: underline; }
+@media(max-width:650px) { .paper h4 { font-size: 1.14rem; } }
+.course { border: 1px solid var(--line); border-radius: 10px; padding: 0 27px 28px; overflow: hidden; }
+.course-art { width: calc(100% + 54px); max-width: none; margin: 0 -27px 26px; height: auto; }
+.course .topic-label { margin-bottom: 13px; }
+@media(max-width:700px) { .project-table caption { display: block; width: 100%; } }
